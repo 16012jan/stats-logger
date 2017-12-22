@@ -1,0 +1,36 @@
+{
+  "port": 4200,
+  "hostname": "localhost",
+  "secretToken": "o7823#%^1t4o8732t4o8732t3241rweotoiro8ewyroyewoiuryoiuewcfiuweyrviueryiuewyoicweio5U=w#HzYPwqJt9u%KLa$k3?LTu&4MqreqqPtFL8qQ@WYnvk7HssBmqMLmzyfd3h",
+  "development": {
+    "database": "fighterDb",
+    "username": "fighter",
+    "password": "fighterpass",
+    "pool": {
+      "max": 5,
+      "min": 0,
+      "acquire": 30000,
+      "idle": 10000
+    },
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "database": "fighterDb",
+    "username": "fighter",
+    "password": "fighterpass",
+    "pool": {
+      "max": 5,
+      "min": 0,
+      "acquire": 30000,
+      "idle": 10000
+    },
+    "dialect": "mysql"
+  }
+}

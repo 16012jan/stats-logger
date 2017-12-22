@@ -1,0 +1,282 @@
+/*____________________________________Main panels______________________________________*/
+
+.ui.accordion:not(.styled) .title.panel-main~.panel-main-fighter:not(.ui),
+.ui.accordion:not(.styled) .title.panel-main~.panel-main-event:not(.ui) {
+    padding: 0;
+    margin: 1em;
+}
+
+/*____________________________________Event______________________________________*/
+.panel-main-event .react-datepicker-wrapper,
+.panel-main-event .react-datepicker__input-container {
+  width:100%;
+}
+/* __________________________________Round Timings____________________________________ */
+
+.ui.accordion .title.panel {
+  background: rgba(0,0,0,.03);
+  margin-bottom: -1px;
+  color: #007bff;
+  border-bottom: #ccc solid 1px;
+  padding: .75rem 1.25rem;
+  font-size: 1.2rem;
+}
+
+.ui.accordion .title.panel.panel-main {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.ui.bottom.attached.segment.active.tab {
+  padding: 0;
+}
+
+.ui.accordion .accordion {
+  margin: 0;
+}
+
+.ui.accordion .accordion .content.active {
+  margin: 1em;
+  padding: 0;
+}
+
+.ui.accordion:not(.styled) .accordion .title~.content:not(.ui) {
+    padding: 0;
+}
+
+.ui.accordion:not(.styled) .title~.content:not(.ui) {
+  padding: 1.2em 0;
+}
+
+/* round timings group */
+
+.group-header {
+  font-size: 1.2rem;
+  font-weight: normal;
+  margin: 1em 2em;
+}
+
+.form-round_timings .small {
+  font-size: 12px;
+}
+
+.fluid {
+  width: 100%
+}
+
+.success {
+  position: absolute;
+  top: 7px;
+  right: 0;
+  padding: 5px 10px;
+  background: #7CEECE;
+  color: #333;
+}
+
+.error {
+  position: absolute;
+  top: 7px;
+  right: 0;
+  padding: 5px 10px;
+  background: #e74c3c;
+  color: #333;
+}
+
+/* Anctions Menu */
+
+.actions-menu {
+  padding-left: 1em;
+  background: grey;
+}
+
+.actions-menu button,
+.actions-menu button:focus {
+  outline: none;
+  background: none;
+  color: #fff;
+  border: 0;
+  cursor: pointer
+}
+
+.menu-wrapper {
+  position: relative;
+}
+
+.actions-menu button:hover {
+  outline: none;
+  color: #efefef;
+}
+
+.actions-menu--text {
+  font-size: .9em;
+}
+
+.action-selects {
+  background: #fff;
+  padding: 5px 3px;
+}
+
+.number-input {
+  padding: 5px 0 5px 3px;
+}
+
+.time-input {
+  width: 30px;
+  border: none;
+  background: transparent;
+}
+
+.time-input:focus {
+  outline: none;
+}
+
+.strike-fields{
+  font-size: 12px;
+  padding-left: 15px;
+  background: #ccc;
+  border: 1px solid #555;
+}
+
+.bars.icon {
+  display: none;
+  position: absolute;
+  color: #fff;
+  right: 10px;
+  top: 15px;
+}
+
+.last-row-btns {
+  position: relative;
+  bottom: 7px;
+  text-align: center;
+  font-size: 13px;
+  color: #999;
+}
+
+.last-row-btns button {
+  cursor:pointer;
+  border:none;
+  font-size: 13px;
+  color: #999;
+  background: transparent;
+}
+
+.last-row-btns button:focus {
+  outline: none
+}
+.last-row-btns button:hover {
+  color: #666;
+}
+
+@media only screen and (max-width: 767px){
+  .actions-menu .nav-item.hidden-mobile{
+    display: none!important;
+  }
+  .bars.icon {
+    display: inline-block;
+  }
+  .actions-menu--text {
+    font-size: 1.1em;
+  }
+}
+
+.ui.bottom.attached.segment.active.tab {
+  border:none
+}
+/*ui colunms */
+.ui.column.grid>[class*="two wide"].column.two-short,
+.ui.grid>.column.row>[class*="two wide"].column.two-short,
+.ui.grid>.row>[class*="two wide"].column.two-short,
+.ui.grid>[class*="two wide"].column.two-short {
+  width: 7%!important;
+  min-width:70px;
+}
+
+@media only screen and (max-width: 900px){
+  .ui.column.grid>[class*="two wide"].column.two-short,
+  .ui.grid>.column.row>[class*="two wide"].column.two-short,
+  .ui.grid>.row>[class*="two wide"].column.two-short,
+  .ui.grid>[class*="two wide"].column.two-short {
+    width: 9%!important;
+    min-width:100px;
+  }
+}
+
+.ui.column.grid>[class*="one wide"].column.defaultWidth,
+.ui.grid>.column.row>[class*="one wide"].column.defaultWidth,
+.ui.grid>.row>[class*="one wide"].column.defaultWidth,
+.ui.grid>[class*="one wide"].column.defaultWidth {
+    min-width: 80px!important;
+}
+
+.ui.column.grid>[class*="one wide"].column.one-short,
+.ui.grid>.column.row>[class*="one wide"].column.one-short,
+.ui.grid>.row>[class*="one wide"].column.one-short,
+.ui.grid>[class*="one wide"].column.one-short {
+    min-width: 50px;
+    width: 4%!important;
+}
+
+.ui.column.grid>[class*="one wide"].column.knock-width,
+.ui.grid>.column.row>[class*="one wide"].column.knock-width,
+.ui.grid>.row>[class*="one wide"].column.knock-width,
+.ui.grid>[class*="one wide"].column.knock-width {
+    min-width: 95px!important;
+}
+
+.ui.column.grid>[class*="two wide"].column.wide-text,
+.ui.grid>.column.row>[class*="two wide"].column.wide-text,
+.ui.grid>.row>[class*="two wide"].column.wide-text,
+.ui.grid>[class*="two wide"].column.wide-text {
+    min-width: 110px!important;
+}
+
+.ui.grid {
+  margin: 0;
+  padding-left:1em;
+}
+
+.strike-fields.ui.grid>.row {
+  margin: 0;
+  line-height: 5em;
+}
+
+.ui.grid>.row>.column {
+    padding: .1em;
+}
+
+.ui.celled.grid>.row>.column {
+    padding: .3em;
+    box-shadow: none;
+}
+
+.ui.celled.grid>.row>.column {
+    /*box-shadow: -1px 0 0 0 #555;*/
+    box-shadow: none;
+}
+
+.ui.menu {
+  background: gray;
+  border-radius: 0;
+}
+
+.ui.menu .header.item {
+  font-size: .8em;
+}
+
+.ui.menu a.item:active, .ui.menu a.item:hover {
+  outline: none;
+  color: #efefef;
+}
+
+.ui.menu a.item {
+  color: #fff;
+}
+.ui.checkbox {
+  text-align: center;
+  padding: 7px 0;
+}
+.ui.checkbox label {
+  font-size: 12px;
+  padding-left: 1.4em;
+}
